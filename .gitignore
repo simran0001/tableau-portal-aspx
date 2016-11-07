@@ -1,0 +1,6 @@
+Properties/
+packages/
+.vs/
+*.sln
+bin/
+!bin/tableauREST9-v1.dll
