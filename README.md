@@ -18,7 +18,7 @@ Tool](https://msdn.microsoft.com/en-us/library/k6h9cz8h.aspx) on the MSDN librar
 By default, the sample attempts to connect to an instance of Tableau Server on localhost. To specify another URL, edit
 the \_includes/header.ascx.cs file and edit the following line:
 
-```
+```java
 string ts_url = "http://localhost";
 ```
 
@@ -41,3 +41,8 @@ sample.
 
 After you publish the sample, navigate to the web server URL and play with the sample!
 
+## Using the REST API library for .NET
+
+This sample uses an unofficial client library for Tableau Server. For more information, see the project homepage:
+
+<http://dev.datapainters.com/products/tableau_rest_connector/>
