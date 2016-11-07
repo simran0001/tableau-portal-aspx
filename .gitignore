@@ -1,5 +1,6 @@
 Properties/
 packages/
+obj/
 .vs/
 *.sln
 bin/
