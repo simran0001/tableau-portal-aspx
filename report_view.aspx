@@ -23,16 +23,17 @@
 
     <div class="container marketing">
 
-        <div class="row featurette" style="padding-left: 25px; padding-bottom: 10px;">
-            <div style="font-size: 24px; font-weight: Bold; color: #878a8f;" id="report_name"></div>
-            <div style="" id="report_desc"></div>
+        <div class="row featurette" style="margin-right: 0px; padding-left: 25px; padding-bottom: 10px;">
+            <div class="custom-toolbar" style="float:right;">
+                <button style="background-color: #000; color: #fff; padding: 5px; border: none;" onclick="exportToPDF();">Export</button>
+            </div>
         </div>
         <div style="clear: both;"></div>
 
         <div class="row featurette" style="border-color: #fff; border-width: 0px; border-style: solid; margin: 5px; margin-top: 15px;">
             <!-- ############################################################### -->
             <!-- This is the placeholder DIV for where we want the Viz to appear -->
-            <div id="vizDisplay" class="viz_area" style="width: 1128px; height: 800px; ">    </div>
+            <div id="vizDisplay" class="viz_area" style="max-width: 1140px; height: 800px;">    </div>
             <!-- ############################################################### -->
         </div>
 
@@ -77,7 +78,10 @@
         tableauViz = new tableau.Viz(vizDiv, url, vizOpts);
 
     }
-    
+
+    function exportToPDF() {
+        tableauViz.showExportPDFDialog();
+    }
     // ###########################################################
     // Here we build out the full Viz url that we will be calling.
     // We have added :refresh to the end of this call to force

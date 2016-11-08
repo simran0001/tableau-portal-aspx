@@ -21,12 +21,13 @@
 <!-- DISPLAY The top menu                 -->
 <!-- -- this comes from menu_top.ascx     -->
 <!-- #################################### -->
+
 <top_menu:Menu ID="top_menu" runat="server" />
 
 <div class="container marketing" style="margin-top: 0px; padding-top: 0px;">
 
     <div class="row featurette" style="padding: 1px; font-size: 34px; color: #878a8f; margin-left: 1px; margin-right: 3px;">
-        Current Reports Available
+        <h2>Featured Workbooks</h2>
     </div>
     <div style="clear: both;"></div>
     <br />
@@ -37,10 +38,26 @@
         Response.Write(load_menu(Session["my_workbooks"].ToString(),Session["user_id"].ToString()));
 
     %>
-            </div>
-        </div>
     </div>
+
 </div>
+<div style="clear: both;"></div>
+<br /><br />
+<div>
+    <h3>Resources</h3>
+    <ul>
+        <li>
+            <a href="https://github.com/jdomingu/tableau-portal-aspx">Sample on Github</a>
+        </li>
+        <li>
+            <a href="http://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api.htm">JavaScript API Documentation</a>
+        </li>
+        <li>
+            <a href="http://onlinehelp.tableau.com/current/api/rest_api/en-us/help.htm">REST API Documentation</a>
+            </i>
+    </ul>
+</div>
+
 
 <!-- ######################## -->
 <!-- DISPLAY The footer       -->

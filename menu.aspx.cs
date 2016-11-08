@@ -95,7 +95,7 @@ namespace ProPortal_Portal
                     // ###########################################################
                     // The link to the report view page simply adds the report_id
                     // to the end.
-                    result = result + "<a href='report_display.aspx?report_id=" + report_id + "' style='font-size: 28px;'>" + workbook_name + "</a><br/>";
+                    result = result + "<a href='report_view.aspx?report_id=" + report_id + "' style='font-size: 28px;'>" + workbook_name + "</a><br/>";
                     result = result + "</div></div>";
                     result = result + "<div class='col-md-1' style=''>";
                     result = result + "<div>";
