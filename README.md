@@ -22,6 +22,31 @@ the \_includes/header.ascx.cs file and edit the following line:
 string ts_url = "http://localhost";
 ```
 
+## Configure trusted tickets to display vizzes
+
+Because the JavaScript API does not share an authenticated session with the REST API, you need to set up trusted tickets
+on Tableau Server before you can render vizzes.
+
+1. Stop Tableau Server.
+
+1. Run the following command to configure Tableau Server to create trusted tickets for the server that runs the sample:
+
+   ```
+   tabadmin set wgserver.trusted_hosts "http://server_that_runs_the_sample"
+   ```
+
+1. Run the following command to save your changes to the configuration:
+
+   ```
+   tabadmin config
+   ```
+
+1. Start Tableau Server.
+
+For more information, see the documentation for [trusted
+tickets](https://onlinehelp.tableau.com/current/server/en-us/trusted_auth_trustIP.htm).
+
+
 ## Tag workbooks on Tableau Server
 
 The sample gets all the views on Tableau Server that have the `Portal` tag. Add the tag to your views before you run the
