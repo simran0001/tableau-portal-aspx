@@ -70,4 +70,4 @@ After you publish the sample, navigate to the web server URL and play with the s
 
 This sample uses an unofficial client library for Tableau Server. For more information, see the project homepage:
 
-<http://dev.datapainters.com/products/tableau_rest_connector/>
+<http://datapainters.com/products/tableau_rest_connector/>
